@@ -15,4 +15,13 @@ class Team extends Model
     {
         return Team::with('images')->get();
     }
+
+    static public function getAll()
+    {
+        return Team::get();
+    }
+    static public function getAllInverse()
+    {
+        return Team::orderBy('id', 'desc')->get();
+    }
 }

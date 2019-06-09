@@ -15,4 +15,5 @@ use Illuminate\Http\Request;
 
 Route::prefix('teams')->group(function () {
     Route::get('', 'TeamController@getTeamsWithImages');
+    Route::get('schedule', 'TeamController@getSchedule');
 });
