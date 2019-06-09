@@ -21,6 +21,7 @@ class TeamsAndImagesTableSeeder extends Seeder
         Team::create(['name' => 'San Antonio Spurs']);
         $team7 = Team::create(['name' => 'Toronto Raptors']);
         $team8 = Team::create(['name' => 'Miami Heat']);
+        // Team::create(['name' => 'Real Madrid']);
 
         Image::create([
             'team_id' => $team1->id,
